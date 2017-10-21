@@ -1,0 +1,17 @@
+/* This folder is dedicated to bitwise programs */
+
+Bitwise operators:
+Bitwise operators may only apply to below types:
+    1.char
+    2.short
+    3.int
+    4.long
+
+c provides 6 bit wise operator:
+    1.and(&)
+    2.inclusive or(|)
+    3.exclusive or(^)
+    4.left shift operator(<<)
+    5.right shift operator(>>)
+    6.unary operator(~)
+
