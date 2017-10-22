@@ -14,4 +14,10 @@ c provides 6 bit wise operator:
     4.left shift operator(<<)
     5.right shift operator(>>)
     6.unary operator(~)
-
+/*------------------------------------*/
+and:result will be 1 if two bits are 1
+or:result will be 1 if any of bits are 1
+xor:result will be 1 if two bits are different
+left_shift:left shifts the number of positions
+right_shifts:right shifts the number of positions
+~:invert all bits
