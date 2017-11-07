@@ -22,5 +22,17 @@ left_shift:left shifts the number of positions
 right_shifts:right shifts the number of positions
 ~:invert all bits
 
+<<<<<<< HEAD
 << - multiply by 2powern positions
 >> - divide by 2powern positions
+=======
+8 4 2 1
+0 0 0 1
+0 0 1 0
+0 0 1 1
+0 1 0 0
+0 1 0 1
+0 1 1 0
+0 1 1 1
+1 0 0 0
+>>>>>>> 5cb8e1948311c702a80adcdf2020e2b0c5b0ddac
