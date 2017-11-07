@@ -21,3 +21,6 @@ xor:result will be 1 if two bits are different
 left_shift:left shifts the number of positions
 right_shifts:right shifts the number of positions
 ~:invert all bits
+
+<< - multiply by 2powern positions
+>> - divide by 2powern positions
