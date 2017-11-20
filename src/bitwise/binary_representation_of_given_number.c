@@ -3,7 +3,8 @@ int position_of_right_most_set_bit(int number);
 
 int main(int argc, char* argv[])
 {
-    position_of_right_most_set_bit(atoi(argv[1]));
+    binary_representation(atoi(argv[1]));
+    //position_of_right_most_set_bit(atoi(argv[1]));
 }
 
 
@@ -21,4 +22,14 @@ int position_of_right_most_set_bit(int number)
     }
     printf("%d\n", position);
     return 0;
+}
+
+int binary_representation(int number)
+{
+    int i =0;
+    for(i = number << 32; i > 0; i = i/2)
+    {
+        (number & i)?printf("1"):printf("0");
+    }
+    printf("\n");
 }
