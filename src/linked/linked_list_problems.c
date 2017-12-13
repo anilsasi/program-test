@@ -203,7 +203,7 @@ void middle_of_list()
 }
 
 
-int main()
+/*int main()
 {
     int i = 0;
     for (i = 10; i < 100; i = i+10)
@@ -225,4 +225,4 @@ int main()
     middle_of_list();
     printf("\n");
     return 0;
-}
+}*/
