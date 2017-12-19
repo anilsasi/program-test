@@ -102,14 +102,6 @@ void inser_at_particular_position(int position, int data)
     }
 }
 
-void reverse_linked_list()
-{
-    node_t* temp = head;
-    while(temp != NULL)
-    {
-        temp = temp->next;
-    }
-}
 
 bool search_element_recursively(node_t* head, int element)
 {
@@ -202,6 +194,45 @@ void middle_of_list()
     printf("middle of node is:%d", slow_ptr->data);
 }
 
+void reverse_linked_list()
+{
+    node_t* current = head;
+    node_t* prev = NULL;
+    node_t* next = NULL;
+
+    while(current != NULL)
+    {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current=next;
+    }
+    head = prev;
+}
+
+void display_reverse(node_t* temp)
+{
+    if (temp == NULL)
+    {
+        return;
+    }
+
+    display_reverse(temp->next);
+    printf("%d", temp->data);
+}
+
+void reverse_recursive(node_t* temp)
+{
+     if (temp->next == NULL)
+     {
+         head = temp;
+         return;
+     }
+     reverse_recursive(temp->next);
+     node_t* q = temp->next;
+     q->next = temp;
+     temp->next = NULL;
+}
 
 int main()
 {
@@ -210,7 +241,7 @@ int main()
     {
         add_node(i);
     }
-    printf("list is:", display_linked_list());
+    printf("list is:%d", display_linked_list());
     //search_node(head, 70);
     //delete_node_at_specific_position(head, 3);
     //delete_node(head);
@@ -219,10 +250,14 @@ int main()
     //printf("after inserting:", display_linked_list());
     //swap_nodes(10, 30);
     //printf("lenght of list is:%d", length_recursive(head));
-    //printf("\n");
+    printf("\n");
     //swap_nodes(10, 30);
     //printf("list after swap:", display_linked_list());
-    middle_of_list();
-    printf("\n");
+    //middle_of_list();
+    //reverse_linked_list();
+    //display_linked_list();
+    //display_reverse(head);
+    reverse_recursive(head);
+    display_linked_list();
     return 0;
 }
