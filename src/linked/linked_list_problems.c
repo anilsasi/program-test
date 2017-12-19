@@ -234,7 +234,7 @@ void reverse_recursive(node_t* temp)
      temp->next = NULL;
 }
 
-int main()
+/*int main()
 {
     int i = 0;
     for (i = 10; i < 100; i = i+10)
@@ -260,4 +260,4 @@ int main()
     reverse_recursive(head);
     display_linked_list();
     return 0;
-}
+}*/
