@@ -22,6 +22,24 @@ void fun(int arr[])
     }
 }
 
+ 
+int check()
+{
+  int M = 2;
+  int arr[M][M]={0};
+  int i, j;
+  for (i = 0; i < M; i++)
+  {
+    for (j = 0; j < M; j++)
+    {
+       arr[i][j] = 0;
+       printf ("%d ", arr[i][j]);
+    }
+    printf("\n");
+  }
+  return 0;
+}
+
 
 int main()
 {
@@ -30,5 +48,6 @@ int main()
   fun(arr);
   //void_array();
   //void_pointer();
+  check();
   return 0;
 }
