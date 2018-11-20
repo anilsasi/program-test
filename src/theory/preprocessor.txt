@@ -1,6 +1,0 @@
-1.preprocessor takes a C program and produces another C program without any #
-2.When we use include directive,  the contents of included header file (after preprocessing) are copied to the current file
-3.Angular brackets < and > instruct the preprocessor to look in the standard folder where all header files are held
-4.Double quotes “ and “ instruct the preprocessor to look into the current folder and 
-    if the file is not present in current folder, then in standard folder of all header files
-5.When we use define for a constant, the preprocessor produces a C program where the defined constant is searched and matching tokens are replaced with the given expression
