@@ -1,0 +1,5 @@
+1.The range of variable depends upon the machine you are using.
+2.The size of float variable is 32-bits
+ c = 5*(f - 32)/9
+ The reason multiplying by 5 and devide by 9 is integer division truncates, since 5 and both are intgers all fractional part will be truncated
+ and result would become zero.
